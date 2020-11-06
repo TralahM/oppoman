@@ -132,5 +132,4 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = "core.storage.WhiteNoiseStaticFilesStorage"
 
 AUTH_USER_MODEL = "user_accounts.User"
-LOGIN_URL = "/users/login/"
-LOGIN_REDIRECT_URL = "/"
+LOGIN_URL = "/login/"
