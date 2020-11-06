@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block BSCT_MAIN %}
+<h2 class="mb-4">Opportunites List</h2>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <a href="/opportunity/create/" class="btn btn-primary">Create Opportunity</a>
+  </div>
+  <div class="col-md-4">
+  </div>
+</div>
+<br> <br>
+<div class="center">
+  <table class="table table-dark">
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>ACCOUNT</th>
+      <th>AMOUNT</th>
+      <th>STAGE</th>
+      <th>CREATED_AT</th>
+      <th>LAST_UPDATED</th>
+    </tr>
+    {% for opp in opps %}
+    <tr>
+      <td><a href="/opportunity/{{ opp.id }}"class="btn btn-primary">Details</a></td>
+      <td>{{ opp.name }}</td>
+      <td>{{ opp.account }}</td>
+      <td>{{ opp.amount }}</td>
+      <td>{{ opp.stage }}</td>
+      <td>{{ opp.created_at }}</td>
+      <td>{{ opp.last_updated }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

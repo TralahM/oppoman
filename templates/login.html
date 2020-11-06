@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block BSCT_MAIN %}
+<br>
+<h2 class="mb-4">Login</h2>
+<form method="POST">
+	{% csrf_token %}
+	{{form.as_p}}
+</form>
+<br>
+<a href="/users/register/" class="mb-4">Or Register Here</a>
+{% endblock %}

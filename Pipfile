@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+django-extensions = "*"
+psycopg2-binary = "*"
+django-redis-cache = "*"
+gunicorn = "*"
+dj-database-url = "*"
+whitenoise = "*"
+pydotplus = "*"
+django-crispy-forms = "*"
+django-filter = "*"
+django-rest-framework = "*"
+django-heroku = "*"
+django-debug-toolbar = "*"
+pytest = "*"
+pytest-django = "*"
+django-cors-middleware = "*"
+django-bootstrap-crud-templates = "*"
+
+[requires]
+python_version = "3.8"

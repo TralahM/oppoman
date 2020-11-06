@@ -1,0 +1,18 @@
+Dear Robert,
+
+As discussed during the interview, please find below the exercise. 
+
+Develop a small web-based system Called Opportunity Management that provides the following functionality:
+
+- Create user :- with a Username/Password
+- User to login using Username/Password
+- User to create accounts - i.e. Safaricom and add their address
+- User to create an opportunity and associate it with an account e.g. Network Security Opportunity for Safaricom. The opportunity should have some characteristics like Amount, Stage (Discovery, Proposal shared, Negotiations)
+- View existing accounts and opportunities
+
+ 
+
+As agreed, you are expected to submit present and demo the system on Saturday at 9:30AM
+ 
+
+In case of you need further clarification, feel free to contact me
