@@ -36,12 +36,16 @@
           <!-- <li> -->
           <!--   <a href="/user/create/"><span class="fa fa-sticky-note mr-3"></span> Users</a> -->
           <!-- </li> -->
+					{% if user.is_authenticated %}
           <li>
-            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Settings</a>
+            <a href="/logout/"><span class="fa fa-paper-plane mr-3"></span>
+							Logout</a>
           </li>
+					{% else %}
           <li>
-            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Information</a>
+            <a href="/login/"><span class="fa fa-paper-plane mr-3"></span> Login</a>
           </li>
+					{% endif %}
         </ul>
 
     	</nav>
