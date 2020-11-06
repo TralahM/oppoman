@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from user_accounts.models import User
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login
@@ -31,7 +31,7 @@ def sign_in(request):
     if request.method == "POST":
         if form.is_valid():
             login(request, form.get_user())
-            return render(request, "index.html")
+            return redirect("/accounts/")
     context["form"] = form
     return render(request, "login.html", context)
 

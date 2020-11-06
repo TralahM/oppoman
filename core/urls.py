@@ -27,15 +27,15 @@ opp_urls = URLGenerator(omodels.Opportunity).get_urlpatterns(crud_types="crud")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    url(r"", include(user_urls)),
-    url(r"", include(acc_urls)),
-    url(r"", include(opp_urls)),
     url(r"^register/", uviews.sign_up, name="register"),
     url(r"^login/", uviews.sign_in, name="login"),
     url(r"^accounts/", oviews.acc_list, name="account_list"),
-    url(r"", oviews.index, name="index"),
     url(r"^opportunities/", oviews.opp_list, name="opportunity_list"),
     url(r"^user/(?P<pk>\d+)/", uviews.user_update, name="user_update"),
     url(r"^user/(?P<pk>\d+)/", uviews.user_delete, name="user_delete"),
     url(r"^users/", uviews.user_list, name="user_list"),
+    url(r"", include(user_urls)),
+    url(r"", include(acc_urls)),
+    url(r"", include(opp_urls)),
+    url(r"", oviews.index, name="index"),
 ]
